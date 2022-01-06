@@ -1,0 +1,8 @@
+com\nankiewic\serverapp\service\DataService.class
+com\nankiewic\serverapp\dto\KeyValueDTO$KeyValueDTOBuilder.class
+com\nankiewic\serverapp\dto\KeyValueDTO.class
+com\nankiewic\serverapp\model\Key$KeyBuilder.class
+com\nankiewic\serverapp\repository\KeyRepository.class
+com\nankiewic\serverapp\controller\DataController.class
+com\nankiewic\serverapp\model\Key.class
+com\nankiewic\serverapp\ServerAppApplication.class

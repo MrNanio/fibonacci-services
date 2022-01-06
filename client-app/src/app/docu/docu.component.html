@@ -1,0 +1,52 @@
+<div class="container mt-3 m-auto">
+
+  <h3 class="text-center mt-5">
+    Dokumentacja
+  </h3>
+
+  <p class="h5">
+    W ramach zadania stworzone rozwiązanie zawierające usługę zbudowaną z 5 serwisów.
+    Jest ona odwzorowaniem zadania prezentowanego w instrukcji do poprzedniego laboratorium.
+    Rysunek poniżej prezentuje stworzoną architekturę.
+  </p>
+  <div class="text-center">
+    <img src="/assets/images/schema2.png" alt="image" width="718"
+         height="634">
+  </div>
+
+  <h5>
+    W ramach zadania wykonano serwisy:
+  </h5>
+
+  <h5>client-app [Client]</h5>
+  <p class="h5 mb-3">
+    Aplikacja kliencka umożliwiająca interakcje użytkownika z systemem (podawanie indeksów do obliczenia,
+    podgląd wpisanych indeksów i wartości obliczonych). Rozwiązanie to zaimplementowano z wykorzystaniem
+    szkieletu programistycznego Angular.
+  </p>
+
+  <h5>server-app [Server]</h5>
+  <p class="h5 mb-3">
+    Aplikacja serwerowa mająca za zadanie odbieranie danych z aplikacji klienckiej, zapisywanie danych do bazy,
+    umieszczanie danych oraz wysyłanie wiadomości w usłudze Redis. Ta część projektu zaimplementowano z użyciem
+    Spring Boot-a, wykorzystano klienta Jedis do obsługi połączenia z usługą Redis, całość spełnia założenia
+    architektury REST
+  </p>
+
+  <h5>worker-app [Worker]</h5>
+  <p class="h5 mb-3">
+    Aplikacja mająca za zadanie nasłuchiwanie Redis-a, odbieranie wiadomości, przetwarzanie ich oraz umieszczanie w
+    usłudze Redis wyniku swoich działa jakim jest obliczanie wartości ciągu Fibonacciego.
+  </p>
+
+  <h5>redis</h5>
+  <p class="h5 mb-3">
+    W koncepcji tego zadania został on wykorzystany do przechowywania wartości oraz rozsyłania wiadomości
+  </p>
+
+  <h5>mysql</h5>
+  <p class="h5 mb-3">
+    Usługa zawierająca bazę danych potrzebną do realizacji zadania
+  </p>
+
+</div>

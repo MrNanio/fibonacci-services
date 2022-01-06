@@ -1,0 +1,35 @@
+<div id="main" class="container text-center mt-5">
+  <form class="form" [formGroup]="fibonacciForm" (ngSubmit)="calculateFibonacci()">
+    <div class="form-group row ">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm row">
+        <label for="number">Liczba K: </label>
+        <input class="form-control" type="number" id="number" formControlName="number"/>
+        <button class="form-submit-btn btn btn-outline-primary " type="submit" [disabled]="!fibonacciForm.valid">
+          Wyślij
+        </button>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+  </form>
+  <div class="container mt-3">
+    <div *ngIf="resultTable">
+      <h2>Lista wpisanych współczynników:</h2>
+      <ul>
+        <li *ngFor="let item of resultIndexTable">{{item.key}}</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<div class="container text-center mt-5">
+  <div *ngIf="resultTable">
+    <h2>Historia obliczeń</h2>
+    <ul>
+      <li *ngFor="let item of resultTable">Element: {{item.key}} ciągu Fibonacciego ma wartość: {{item.value}}</li>
+    </ul>
+  </div>
+</div>
+
